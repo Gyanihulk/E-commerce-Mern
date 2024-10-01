@@ -70,10 +70,8 @@ const Header = () => {
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
-                Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
-                </a>
+                Extra 10 % disount on order above ₹ 2500
+             
               </p>
             </div>
           </div>
@@ -85,7 +83,7 @@ const Header = () => {
             <div className="col-2">
               <h2>
                 <Link className="text-white" to="/ ">
-                  Cart Corner
+                  Chardham store
                 </Link>
               </h2>
             </div>

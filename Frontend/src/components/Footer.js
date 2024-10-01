@@ -38,33 +38,34 @@ const Footer = () => {
               <h4 className="text-white mb-4">Contact Us</h4>
               <div>
                 <address className="text-white fs-6">
-                  Hno : Daiict college, Reliance Cross Rd, <br />{" "}
-                  Gandhinagar,Gujarat <br />
-                  PinCode: 382007
+                  S 101 Shivalik Nagar, BHEL Ranipur, <br /> Haridwar,
+                  Uttarakhand <br />
+                  PinCode: 249403
                 </address>
                 <a
-                  href="tel:+91 8264954234"
+                  href="tel:+91 7017368626"
                   className="mt-3 d-block mb-1 text-white"
                 >
-                  +91 8264954234
+                  +91 7017368626
                 </a>
                 <a
-                  href="mailto:devjariwala8444@gmail.com"
+                  href="mailto:kumar.adamya2000@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
-                  devjariwala8444@gmail.com
+                  kumar.adamya2000@gmail.com
                 </a>
+
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
-                  <a className="text-white" href="#">
+                  <a className="text-white" href="/">
                     <BsLinkedin className="fs-4" />
                   </a>
-                  <a className="text-white" href="#">
+                  <a className="text-white" href="/">
                     <BsInstagram className="fs-4" />
                   </a>
-                  <a className="text-white" href="#">
+                  <a className="text-white" href="/">
                     <BsGithub className="fs-4" />
                   </a>
-                  <a className="text-white" href="#">
+                  <a className="text-white" href="/">
                     <BsYoutube className="fs-4" />
                   </a>
                 </div>
@@ -93,7 +94,9 @@ const Footer = () => {
               <div className="footer-link d-flex flex-column">
                 <Link className="text-white py-2 mb-1">About Us</Link>
                 <Link className="text-white py-2 mb-1">Faq</Link>
-                <Link className="text-white py-2 mb-1">Contact</Link>
+                <Link to="contact" className="text-white py-2 mb-1">
+                  Contact
+                </Link>
               </div>
             </div>
             <div className="col-2">
@@ -113,7 +116,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear()}; Powered by Cart Corner
+                &copy; {new Date().getFullYear()}; Powered by Chardham store
               </p>
             </div>
           </div>
