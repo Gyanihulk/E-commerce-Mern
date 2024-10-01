@@ -1,0 +1,42 @@
+services:
+  backend:
+    build:
+      args:
+      - NODE_ENV=development
+      context: backend
+      target: development
+    command: npm run dev
+    environment:
+      - JWT_SECRET=har-har-mahadev
+      - MONGODB_URL=mongodb+srv://kumaradamya2000:Ztp2OYCwVY2MeyP0@diwali2024.bm0op.mongodb.net/?retryWrites=true&w=majority&appName=Diwali2024
+      - CLOUD_NAME=dl0dnzxur
+      - API_KEY=198927133892981
+      - SECRET_KEY=5_rjzxhLYHYuMf8uy-1zx47r5JY
+    ports:
+      - 5000:5000
+    volumes:
+      - ./Backend/src:/code/src:ro
+      - ./Backend/package.json:/code/package.json
+      - ./Backend/package-lock.json:/code/package-lock.json
+      - Backend-notused:/opt/app/node_modules
+    networks:
+      - public
+      - private
+  frontend:
+    build:
+      context: frontend
+      target: development
+    ports:
+      - 3000:3000
+    volumes:
+      - ./Frontend/src:/code/src
+      - /code/node_modules
+    networks:
+      - public
+    depends_on:
+      - backend
+networks:
+  public:
+  private:
+volumes:
+  Backend-notused: 
